@@ -83,17 +83,24 @@ nav header .header-one{
     }
      nav header .header-one{
         padding: 0;
+        display: flex;
+        align-items: center;
+        height:62px;
+        
+        
+       
     }
     .text-icon{
         display: flex;
         align-items: center;
-        transform: translate(11px,-3px);
+        transform: translate(-1px,-1px);
         
 
     }
     .text-icon img{
         width:25px;
-        transform: translate(1px,2px);
+        transform: translate(1px,1px);
+        
     }
     .text-icon h3{
         font-family: 'cereal-two';
@@ -178,16 +185,22 @@ nav header .header-one{
     .text-icon h3{
         margin: 0px 0px 0px 24px;
         color:#1a1a1f;
+        transform: translate(1px,1px);
+
     }
     .list-items li{
         margin-top: 0;
         padding: 20px 8px;
+    }
+    .items-list ul{
+        transform: translate(24px,-1px);
     }
 
     .right-navbar ul{
         display:flex;      
         padding: 8px; 
         align-items: center;
+        transform: translateX(17px);
 
     }
     .right-navbar a{
@@ -216,36 +229,58 @@ nav header .header-one{
         line-height: 1;
         text-align: center;
         border-radius: 4px;
-        margin: 0px 6px;
-        width:62px;
+        /* margin: 0px 6px; */
+        width:65px;
+        transform: translate(3px,-1px);
         
         }
+        
         form input{
             background-color: #f8f9fa;
             border-radius: 4px;
             border-color: #747479;
-            width: 100px;
+            width: 120px;
             padding:1px 24px 1px 12px;
             border: 1px solid  #747479;
             font-family:'cereal';
             padding-left:12px;
             min-height: 32px;
+            transform: translate(20px,-1px);
             
         
         }
         .searchbar{
             position: relative;
+           
         }
         .searchbar img{
             
                 width: 14px;
                 font-family: 'cereal-two'; 
                 margin-right: 28px;  
-                opacity: 0.8; 
+                opacity: 0.5; 
                 position:absolute;
-                top:10px;
-                right:10px;
+                top:8px;
+                left:114px;
                 
             
         } 
-}
+        ul .laptop-signin{
+            transform: translateX(10px);
+            
+        }
+    }
+    @media screen and (min-width:1093px) {
+        ul li .button{
+            width: 100%;
+        
+        }        
+    }
+    @media screen and (min-width:1600px){
+         nav header .header-one{
+            max-width: 1600px;
+            margin:0px 200px;
+    }
+
+    }
+   
