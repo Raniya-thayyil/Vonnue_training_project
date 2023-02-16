@@ -561,3 +561,56 @@ function sortFruit(){
     }
 }
 sortFruit();
+
+const credit=0;
+if(credit){
+    console.log("lets play")    
+}
+else{
+    console.log("sorry")
+}
+//truthy falsy
+let trueFalse1=Boolean(12)
+console.log(trueFalse1)
+
+//template literals
+ function welcome(greet,wel){
+    console.log(`${greet},${wel}`)
+ }
+ welcome("hey","there")
+
+
+ const player="raniya"
+ const opponent="nick"
+ const game="fighter"
+ let points=0;
+ let hasOwn=false
+
+//game
+points+=100
+hasOwn=true
+if (hasOwn){
+    console.log(`${player} got ${points} and won the ${game} game`)
+}
+else{
+    console.log(`the winner is  ${opponent} ! ${player} lost the game`)
+}
+
+//localstorage exercise
+//save a value to localstorage
+//localStorage.setItem("myNums",[1,2,3,4,5])
+console.log(localStorage.getItem("myNums"))
+
+let player_data=[{
+    player:"jane",
+    score:90
+},
+{
+    player:"mark",
+    score:20
+}
+]
+const janeBtn=document.getElementById("log-btn")
+janeBtn.addEventListener("click",function(){
+    console.log(player_data[0])
+})
