@@ -612,5 +612,22 @@ let player_data=[{
 ]
 const janeBtn=document.getElementById("log-btn")
 janeBtn.addEventListener("click",function(){
-    console.log(player_data[0])
+    console.log(player_data[0].score)
 })
+
+function generateSentence(desc,arr){
+    let str=`the ${arr.length} ${desc} are `
+    const lastIndex=arr.length-1
+    for (let i=0;i<arr.length;i++){
+        if(i===lastIndex){
+            str+=arr[i] 
+        }
+        else{
+            str+=arr[i] +", "
+        }
+        
+    }
+    return str
+}
+const ans=generateSentence("largest countries",["china","india","usa"])
+console.log(ans)

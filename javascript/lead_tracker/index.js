@@ -91,9 +91,7 @@ inputBtn.addEventListener("click",function(){
    //set the array  into localstorage as string
    localStorage.setItem("myLead",JSON.stringify(myLead))
    render(myLead);
-   console.log(localStorage.getItem("myLead"))
-  
-   
+   console.log(localStorage.getItem("myLead"))   
 })
 
 
