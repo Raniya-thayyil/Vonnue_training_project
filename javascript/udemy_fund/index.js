@@ -85,3 +85,41 @@
 // let tip= bill<=300 && bill>=50? bill*(15/100):bill*(20/100)
 // console.log(`the bill was ${bill} , the tip was ${tip} and the total value ${bill+tip}`)
 
+'use strict';
+// let hasLicence=false;
+// const passTest=true;
+// if(passTest) hasLicences=true;
+// if(hasLicence) console.log('i can drive')
+//reserved words canot use for vaiables
+//const inteface='audi'
+
+//function expression
+// const calAge=function(b){
+//     return 20-b
+// }
+// const a=calAge(4)
+// console.log(a)
+
+//arrow function
+// const calAge=b=>20-b
+// const age=calAge(3)
+// console.log(age)
+// const yearRet=year=>{
+//     const age=2037-year
+//     const ret=65-age
+//     return ret;
+// }
+// const retAge=yearRet(1999)
+// console.log(retAge)
+
+//function calling anither function
+const cutFruit=function(fruit){
+    return fruit*4;
+}
+const fruitsProcessor=function(app,org){
+    const applePiece=cutFruit(app)
+    const orangePiece=cutFruit(org)
+    const juice=`juice with ${applePiece} apple and ${orangePiece} oranges`
+    return juice
+}
+console.log(fruitsProcessor(2,4))
