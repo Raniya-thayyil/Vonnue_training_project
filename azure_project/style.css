@@ -225,6 +225,12 @@ section a.btn-second {
     padding: 0px 12px;
 
 }
+.first-card-whole{
+    padding-inline: 12px;
+}
+.card-img img{
+    
+}
 
 /* Tablet styles */
 @media screen and (min-width:768px) {
@@ -451,6 +457,7 @@ section a.btn-second {
         border: 1px solid #6f9e02;
         color: #1a1a1f;
         display: inline-block;
+        font-family: 'cereal-two';
         font-size: 12px;
         font-weight: 600;
         padding: 9px;
@@ -601,7 +608,7 @@ section a.btn-second {
         background-image: url('/assets/image/landing.avif');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-x: -181px;
+        /* background-position-x: -181px; */
         height: 478px;
         object-fit: cover;
 
@@ -674,6 +681,17 @@ section a.btn-second {
     .btn-second span{
         margin-left: 1px;
     }
+    .promise-text {
+        margin: 50px 0px 16px;
+       
+    }
+    .h2-text h2{
+        font-size: 24px;
+    }
+    ul li:first-child i{
+      margin-left:2px;
+    }
+    
 
 
 }
@@ -689,11 +707,63 @@ section a.btn-second {
     }
 
 }
-
+@media screen and (min-width:1400px) {
+    .intro-text h1{
+        width:35%;
+        font-size: 50px;
+    }
+    .full-content{
+        padding-left: 105px;
+    }
+    .intro-text p{
+        width:37%;
+        margin-top: 23px;
+    }
+    section .main{
+        height: 595px;
+        background-position: 49%;
+    }
+    .contact-sale {
+      white-space: nowrap;
+      margin-right: 14px;
+        
+        
+    }
+    .sign-in-down {
+        white-space: nowrap;
+    }
+    nav header .header-one{
+        margin-top: -7px;
+    }
+    h1.head-text{
+        margin-bottom: 9px;
+    }
+    section .full-content .head-text{
+        transform: translate(2px,-4px);
+    }
+}
 @media screen and (min-width:1700px) {
     nav header .header-one {
         max-width: 1600px;
         margin: 0px 200px;
+    }
+    .full-content{
+        margin-left: 91px;
+      
+        /* transform: translate(7px,5px); */
+    }
+    section .main{
+        height: 624px;
+        
+    }
+    nav header .header-one{
+       margin-inline: auto;
+        margin-top:-4px ;
+        
+    }
+    .intro-text p{
+        width:36%;
+        margin-top: 23px;
     }
 
 }
