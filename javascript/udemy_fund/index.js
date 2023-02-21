@@ -145,19 +145,35 @@
 // console.log(yearsRetire(1991,'jonas'))
 // console.log(yearsRetire('1970','mike'))
 
-const calcAverage=(a,b,c)=>(a+b+c)/3
+// const calcAverage=(a,b,c)=>(a+b+c)/3
 
-const scoreDOlphins=calcAverage(44,23,71)
-const scoreKoalas=calcAverage(65,54,49)
+// const scoreDOlphins=calcAverage(44,23,71)
+// const scoreKoalas=calcAverage(65,54,49)
 
-const checkWinner=function(avgDolphin,avgKoalas){
-    if(avgDolphin>=2*avgKoalas){
-        console.log(`dolphins win (${avgDolphin} vs. ${avgKoalas})`)
-    }else if(avgKoalas>=2*avgDolphin){
-        console.log(`koala win (${avgKoalas} vs. ${avgKoalas})`)
-    }else{
+// const checkWinner=function(avgDolphin,avgKoalas){
+//     if(avgDolphin>=2*avgKoalas){
+//         console.log(`dolphins win (${avgDolphin} vs. ${avgKoalas})`)
+//     }else if(avgKoalas>=2*avgDolphin){
+//         console.log(`koala win (${avgKoalas} vs. ${avgKoalas})`)
+//     }else{
 
-        console.log(`no one wins`)
-    }
+//         console.log(`no one wins`)
+//     }
+// }
+// checkWinner(scoreDolphins,scoreKoalas)
+
+const friend=['micheal','bob','marley']
+console.log(friend.includes('mike'))
+
+
+
+function calcTip(bills){
+ return bills>=50 && bills <= 300 ? bills * 0.15:bills * 0.2    
+
 }
-checkWinner(scoreDOlphins,scoreKoalas)
+
+const bills=[125,555,44]
+const tips=[calcTip(bills[0]),calcTip(bills[0]),calcTip(bills[0])]
+const total=[bills[0]+tips[1],bills[1]+tips[1],bills[2]+tips[2]]
+console.log(bills,tips,total)
+
