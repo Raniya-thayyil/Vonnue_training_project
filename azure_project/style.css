@@ -227,11 +227,27 @@ section a.btn-second {
 }
 .first-card-whole{
     padding-inline: 12px;
+    margin:0px 0px 24px;
+    box-shadow: 1px 4px 5px black;
+    border-radius: 3px;
 }
-.card-img img{
+.text-main-card{
+    padding: 0px 24px;
+}
+.text-main-card h3{
+    margin: 0px 0px 8px;
+    padding: 24px 0px 0px;
+}
+.text-main-card span{
+    color: #0067b8;
+    font-size: 18px;
+    font-family: 'cereal-two';
+}
+.text-main-card p{
     
+    font-size: 16px;
+    font-family: 'cereal';
 }
-
 /* Tablet styles */
 @media screen and (min-width:768px) {
 
