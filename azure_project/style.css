@@ -503,18 +503,22 @@ section a.btn-second {
         background-image: url('/assets/image/card1.avif');
         background-size: cover;
         background-position: center;
+        /* background-attachment: fixed; */
         
         
     }
     .text-main-card {
         
-        padding-top: 70%;
+        padding-top: 66%;
     }
     .first-card .card-img img{
         display: none;
     }
     .second-card-texts {
         margin-left: 20px;
+    }
+    .second-card-texts p{
+       width:245px
     }
    
 }
