@@ -178,4 +178,17 @@ const total=[bills[0]+tips[1],bills[1]+tips[1],bills[2]+tips[2]]
 console.log(bills,tips,total)
 console.log("hello")
 
+const jonArray=[
+    'jonas',
+    'manu',
+    23,
+    ['micheal','peter']
+];
 
+const jon={
+    firstName:'jon',
+    lastNmae:'peter',
+    age:9,
+    job:'teacher',
+    friends:['micheal','peter']
+}
