@@ -329,102 +329,121 @@ section a.btn-second {
     transform: translateX(9px);
 
 }
+
 /* new to azure */
-.main-new-azure{
+.main-new-azure {
     margin: 10px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.new-azure-section{
+
+.new-azure-section {
     padding: 16px 24px;
     font-size: 16px;
     font-family: 'cereal';
 }
-a.overview-btn{
+
+a.overview-btn {
     padding: 8px 12px;
     color: #0078d4;
     text-decoration: none;
     /* border-color: currentColor; */
-    border:2px solid currentColor;
+    border: 2px solid currentColor;
     width: 100%;
-    font-family: 'cereal-two';    
+    font-family: 'cereal-two';
 }
-.new-azure-contents a span{
+
+.new-azure-contents a span {
     /* font-weight: 600; */
     font-family: 'cereal-two'
 }
-a.overview-btn:hover{
+
+a.overview-btn:hover {
     background-color: rgb(182, 218, 228);
 }
+
 /* start putting ideas */
 
-.ideas-text-main-two{
-    margin-top:53px;
+.ideas-text-main-two {
+    margin-top: 53px;
     margin-bottom: 13px;
 }
-.section-text-one{
+
+.section-text-one {
     padding: 24px 0px;
 }
-.ideas-text-content{
+
+.ideas-text-content {
     padding-left: 12px;
     padding-right: 12px;
 }
-.ideas-text-content h2{
+
+.ideas-text-content h2 {
     font-family: 'cereal-two';
     font-size: 19px;
     margin: 0px 0px 8px;
     line-height: 1.2;
 }
+
 /* services */
-.main-services{
+.main-services {
     padding: 0px 12px;
 }
+
 .feature-list {
     display: flex;
     gap: 10px;
     overflow: scroll;
-    border-bottom:1px solid #000000;
+    border-bottom: 1px solid #000000;
 
 }
+
 .feature-list::-webkit-scrollbar {
     display: none;
 
 }
-.feature-list a{
+
+.feature-list a {
     text-decoration: none;
     font-family: 'cereal-two';
     color: #505050;
-    padding:8px 24px ;
+    padding: 8px 24px;
     font-size: 16px;
 
-   
-}
-.feature-list a:hover{
-   background-color: #dddd;
-   color:#000000
-   
-}
-.feature-list a:nth-child(1){
-    color: #0078d4;
-    padding:8px 24px ;
-    border-bottom:3px solid #0078d4;
 
 }
-.feature-list a:nth-child(2){
-   white-space: nowrap;
+
+.feature-list a:hover {
+    background-color: #dddd;
+    color: #000000
 }
-.feature-list a:nth-child(5){
+
+.feature-list a:nth-child(1) {
+    color: #0078d4;
+    padding: 8px 24px;
+    border-bottom: 3px solid #0078d4;
+
+}
+
+.feature-list a:nth-child(2) {
     white-space: nowrap;
- }
- .feature-list a:nth-child(6){
+}
+
+.feature-list a:nth-child(5) {
     white-space: nowrap;
- }
- .services-cards-main{
+}
+
+.feature-list a:nth-child(6) {
+    white-space: nowrap;
+}
+
+.services-cards-main {
     margin-top: 3rem;
     padding: 0px 12px;
- }
- .service-one{
+}
+
+.service-one {
     border-radius: 8px;
     box-shadow: 0 0.1875rem 0.4375rem 0 rgb(0 0 0 / 13%), 0 0.0625rem 0.125rem 0 rgb(0 0 0 /11%);
     text-align: center;
@@ -433,57 +452,190 @@ a.overview-btn:hover{
     align-items: center;
     justify-content: center;
     margin-bottom: 3rem;
- }
- .service-one-img{
+}
+
+.service-one-img {
     padding: 1.5rem 1.5rem 0 1.5rem;
- }
- .service-one-img img{
-    width:36px;
-    height:36px; 
-    
-   
- }
- .service-one-text{
+}
+
+.service-one-img img {
+    width: 36px;
+    height: 36px;
+
+
+}
+
+.service-one-text {
     padding: 24px 24px 0px;
- }
- .service-one-text p{
-    font-size:16px ;
+}
+
+.service-one-text p {
+    font-size: 16px;
     font-family: 'cereal';
- }
- .service-one-link {
+}
+
+.service-one-link {
     padding: 1rem 1.5rem 1.5rem 1.5rem;
- }
- .service-one-link a{
+}
+
+.service-one-link a {
     color: #0067b8;
     /* text-decoration: none; */
     font-family: 'cereal-two';
- }
-.see-all-prodcts{
-    padding-right: 0.75rem ;
+}
+
+.see-all-prodcts {
+    padding-right: 0.75rem;
     padding-left: 0.75rem;
 }
-.section-drag{
+
+.section-drag {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
 
-.section-drag-content a{
+.section-drag-content a {
     text-decoration: none;
     font-size: 16px;
     margin: 8px 0px;
     padding: 0px 27px 0px 0px;
     color: #0067b8;
-    font-family: 'cereal-two'; 
-   
+    font-family: 'cereal-two';
+
 }
-.section-drag-content a span{
+
+.section-drag-content a span {
     font-size: 16px;
     color: #0067b8;
-    font-family: 'cereal-two';   
+    font-family: 'cereal-two';
 }
-.section-drag-content i{
+
+.section-drag-content a i {
+    line-height: 1.2;
+    transform: translateY(2px);
+}
+
+.innovation-text-main {
+    margin-top: 30px;
+}
+
+.innovation-text-two {
+    margin-top: 10px;
+}
+
+.innovation-text {
+    padding: 24px 0px;
+}
+
+.innovation-text-content {
+    padding: 0px 12px;
+}
+
+.innovation-text-content h2 {
+    margin: 0px 0px 8px;
+    font-size: 19px;
+    font-family: 'cereal-two';
     line-height: 1.2;
 }
+
+.images-overflow-main {
+    margin-left: 1px;
+}
+
+.images-overflow-main ul {
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    overflow: scroll;
+    list-style-type: none;
+
+}
+
+.images-overflow-main ul li img {
+    width: 61px;
+
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
+    /* height: 50px; */
+}
+
+.images-overflow-main ul li {
+    margin: 0px 24px 0px 3px;
+}
+
+.nba img {
+    width: 20px;
+}
+
+.nhs img {
+    border: 3px solid #0078d4;
+    border-radius: 10px;
+    padding: 3px;
+
+
+}
+
+.images-list .nhs img {
+    -webkit-filter: grayscale(0%)
+}
+
+.images-list .nba img {
+    height: 40%;
+}
+
+.nhs-hospital-image img {
+    width: 100%;
+}
+
+.nhs-text-main {
+    padding: 48px 12px;
+    background: #000000;
+    margin-top: -5px;
+}
+
+.nhs-text-main h3 {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'cereal-two';
+    margin: 0px 0px 8px;
+    line-height: 1.2;
+}
+
+.nhs-text-main a {
+    color: #50e6ff;
+    text-decoration: none;
+    font-family: 'cereal-two';
+    padding: 0px 27px 0px 0px;
+    margin: 8px 0px;
+}
+
+.nhs-text-main a span {
+    color: #50e6ff;
+    font-size: 16px;
+}
+
+.nhs-text-main a i {
+    /* transform: translateY(3px); */
+    margin-left: 3px;
+}
+
+.migration-image img {
+    width: 100%;
+}
+.images-list::-webkit-scrollbar{
+    display: none;
+}
+
+
+@media screen and (min-width:426px) {
+    .images-overflow-main ul {
+        justify-content: center;
+    }
+}
+
+
 
 
 
@@ -647,60 +799,196 @@ a.overview-btn:hover{
     }
 
     /* cards */
-    .main-cards{
+    .main-cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 25px;
     }
+
     .first-card-whole {
-        width: 100%;   
+        width: 100%;
         display: flex;
         justify-content: end;
-        flex-direction: column;     
+        flex-direction: column;
 
     }
+
     .first-card-whole {
         background-image: url('/assets/image/card1.avif');
         background-size: cover;
         background-position: center;
         border-radius: 9px;
         /* background-attachment: fixed; */
-        
-        
+
+
     }
-    
-    .first-card .card-img img{
+
+    .first-card .card-img img {
         display: none;
     }
+
     .second-card-texts {
-        margin:4px -12px 0px 23px;
+        margin: 4px -12px 0px 23px;
     }
-   
+
     .first-above-card {
 
         box-shadow: 0 0.1875rem 0.4375rem 0 rgb(0 0 0 / 0%), 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 11%);
     }
-    .feature-list{
+
+    .feature-list {
         display: flex;
         flex-direction: column;
         border-bottom: none;
     }
-    .main-section-both{
+
+    .main-section-both {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
     }
-    .services-cards-main{
-       
+
+    .services-cards-main {
+
         display: grid;
         column-gap: 40px;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: -16px;
     }
-   
-.service-one{
-    height: 77%;
-}}
+
+    .service-one {
+        height: 77%;
+    }
+
+    .git-azure {
+        padding: 4rem 1.5rem 1rem 1.5rem;
+    }
+
+    .service-one-text {
+        padding: 24px 22px 0px;
+    }
+
+    .git-azure span {
+        white-space: nowrap;
+    }
+
+    .service-one-text p {
+        line-height: 1.5;
+    }
+
+    .azure-app span {
+        white-space: nowrap;
+    }
+
+    .azure-devop {
+        padding: 1.2rem 1.5rem 1rem 1.5rem;
+    }
+
+    .azure-sql {
+        padding: 1.2rem 1.5rem 1rem 1.5rem;
+    }
+
+    .azure-app {
+        padding: 6rem 1.5rem 1rem 1.5rem;
+    }
+
+    .azure-virtual {
+        padding: 3rem 1.5rem 1rem 1.5rem;
+    }
+
+    .azure-vm {
+        padding: 2rem 1.5rem 1rem 1.5rem;
+    }
+
+    .services-cards-main {
+        column-gap: 24px;
+        width: 81%;
+    }
+
+    .service-one {
+        height: 92%;
+    }
+
+    .service-one-img {
+        padding: 0.5rem 1.5rem 0 1.5rem;
+    }
+
+    .feature-list a {
+        margin: 0px 0px 16px;
+    }
+
+    .feature-list {
+        width: 100%;
+    }
+
+    .feature-list a:nth-child(1) {
+        border-bottom: none;
+        border-left: 0.25rem solid #0078d4;
+
+    }
+
+    .feature-list a:nth-child(2) {
+
+        width: 98%;
+        white-space: normal;
+    }
+
+    .feature-list a:nth-child(5) {
+
+        width: 68%;
+        white-space: normal;
+    }
+
+    .feature-list a:nth-of-type(6) {
+        white-space: normal;
+
+    }
+
+    .section-drag-content {
+        text-align: center;
+    }
+
+    .innovation-text-main {
+        text-align: center;
+    }
+
+    .images-overflow-main ul li img {
+        width: 130px;
+    }
+
+    .images-list .nba img {
+        height: 20%;
+    }
+
+    .images-overflow-main ul {
+        gap: 13px
+    }
+
+    .hospital-image-text {
+        position: relative;
+    }
+
+    .nhs-text-main {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 48px;
+        /* margin-top: -10px; */
+        position: absolute;
+        top: 266px;
+
+
+    }
+
+    .images-overflow-main ul li {
+        height: 159px;
+    }
+
+    .images-list .nba img {
+        height: 36%;
+    }
+
+
+}
 
 
 @media screen and (min-width:1080px) {
@@ -1007,43 +1295,126 @@ a.overview-btn:hover{
     ul li:first-child i {
         margin-left: 2px;
     }
+
     /* cards */
-    .main-cards{
+    .main-cards {
         padding-left: 5%;
-        padding-right:5% ;
+        padding-right: 5%;
     }
+
     .second-card-texts {
-        
+
         padding: 48px;
     }
-    .second-card-texts span {        
+
+    .second-card-texts span {
         font-size: 19px;
-        
+
     }
-    .text-main-card span{
+
+    .text-main-card span {
         font-size: 19px;
     }
-    .text-main-card{
+
+    .text-main-card {
         padding: 0px 30px;
         margin-left: 20px;
         margin-bottom: 20px;
     }
 
     /* start putting ideas */
-    .ideas-text-main-one{
+    .ideas-text-main-one {
         padding-left: 4%;
         padding-right: 5%;
         width: 65%;
     }
-    .ideas-text-content{
+
+    .ideas-text-content {
         padding-left: 12px;
         padding-right: 12px;
     }
-    .ideas-text-content h2{
+
+    .ideas-text-content h2 {
         font-size: 21px;
     }
 
+    .main-services {
+        padding: 0 5%;
 
+    }
+
+    .feature-list a:nth-child(2) {
+        white-space: nowrap;
+    }
+
+    .feature-list a:nth-child(5) {
+        white-space: nowrap;
+    }
+
+    .feature-list a:nth-child(6) {
+        white-space: nowrap;
+    }
+
+    .services-cards-main {
+        padding-left: 7%;
+        padding-right: 3%;
+    }
+
+    .service-one {
+        height: 84%;
+    }
+
+    .git-azure {
+        padding: 3rem 1.5rem 1rem 1.5rem;
+    }
+
+    .git-img {
+        padding-top: 12px;
+    }
+
+    /* .azure-devop{
+        padding: 1.2rem 1.5rem 1rem 1.5rem;
+    }
+    .azure-sql{
+        padding: 1.2rem 1.5rem 1rem 1.5rem;
+    }
+    .azure-app{
+        padding: 3rem 1.5rem 1rem 1.5rem;
+    }
+    .azure-virtual{
+        padding:3rem 1.5rem 1rem 1.5rem;
+    }
+    .azure-vm{
+        padding:2rem 1.5rem 1rem 1.5rem;
+    } */
+    .azure-virtual {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    }
+
+    .azure-app {
+        padding: 4rem 1.5rem 1rem 1.5rem;
+    }
+
+    .azure-vm {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    }
+
+    .service-one-text {
+        padding: 24px 29px 0px;
+    }
+
+    .section-drag-content a i {
+        transform: translateY(2px);
+
+    }
+    .nhs-text-main{
+        margin-left: 57px;
+        top:34%;
+        right:41%
+    }
+    .nhs-text-main h3{
+        font-size: 19px;
+    }
 
 }
 
@@ -1101,26 +1472,37 @@ a.overview-btn:hover{
     section .full-content .head-text {
         transform: translate(2px, -4px);
     }
-    .h2-text h2{
-        font-size:24px;
+
+    .h2-text h2 {
+        font-size: 24px;
     }
+
     .second-card-texts span {
         font-size: 21px;
     }
+
     .text-main-card span {
         font-size: 21px;
     }
- .ideas-text-content h2 {
-    font-size: 24px
+
+    .ideas-text-content h2 {
+        font-size: 24px
     }
+    .nhs-text-main{
+        top:50%;
+        right:41%;
+    }
+
 }
+
 @media screen and (min-width:1629px) {
     .second-card-texts {
-        padding:66px ;
+        padding: 66px;
     }
-    .main-cards{
-        padding: 0px 5.5%;   
-       }
+
+    .main-cards {
+        padding: 0px 5.5%;
+    }
 
 }
 
@@ -1151,14 +1533,31 @@ a.overview-btn:hover{
         width: 36%;
         margin-top: 23px;
     }
-    .main-cards{
-     padding: 0px 8%;   
+
+    .main-cards {
+        padding: 0px 8%;
     }
+
     .second-card-texts {
-        padding:66px ;
+        padding: 66px;
     }
+
     .ideas-text-content h2 {
         font-size: 28px
-        }
+    }
+    .nhs-text-main{
+
+        top:78%;
+        right:40%;
+        margin-left: 20%;
+        padding: 30px;
+    }
+    .nhs-text-main h3{
+        font-size: 14px;
+    }
+    .feature-list a span {
+        font-size: 12px;
+        margin-left: 30px;
+    }
 
 }
