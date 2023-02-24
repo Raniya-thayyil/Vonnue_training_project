@@ -627,6 +627,209 @@ a.overview-btn:hover {
 .images-list::-webkit-scrollbar{
     display: none;
 }
+.migration-img-text-main{
+    padding: 0px 0px 48px;
+}
+.migration-img-text{
+    /* padding: 0px 0px 48px; */
+    background-color: #f8f9fa;    
+}
+.migration-text-link{
+    font-size: 16px;
+    font-family: 'cereal';
+    padding: 24px;
+}
+.migration-text-link h2{
+    font-size: 24px;
+    font-family: 'cereal-two';
+    margin: 0px 0px 21px;
+    line-height: 1.2;
+    
+}
+.migration-image img{
+    margin-top: 14px;
+}
+#explore-help a{
+    font-size: 16px;
+    /* margin: 8px 0px; */
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 2px solid #0078d4;
+}
+#explore-help a span{
+    color: #0078d4;
+    font-family: 'cereal-two';
+}
+/* discover */
+.discover-head-cards{
+   
+    padding: 0px 12px;
+    
+}
+.discover-cards{
+    padding: 0px 12px;
+
+}
+.each-card{
+    box-shadow: 0 0.1875rem 0.4375rem 0 rgb(0 0 0 / 11%), 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 16%);
+    margin: 0px 0px 48px;
+   
+}
+/* .discover-cards-section{
+    padding: 0px 12px;
+} */
+.discover-cards-section img{
+    width: 100%;
+}
+.discover-head{
+    padding: 24px 0px;
+}
+.discover-head h2{
+    font-size: 19px;
+    margin: 0px 0px 8px;
+    font-family: 'cereal-two';
+    line-height:1.2 ;
+
+}
+.discover-texts{
+    padding: 24px 24px 0px;
+    font-size: 16px;
+    font-family: 'cereal';
+}
+.card-footer{
+    padding: 16px 24px 24px;
+}
+.discover-texts h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0px 0px 8px;
+    font-family: 'cereal';
+    font-weight: inherit;
+
+}
+.discover-texts p{
+    line-height: 1.5;
+    margin: 0px 0px 16px;
+}
+.learn-more a{
+    margin: 8px 0px;
+    padding: 0px 27px 0px 0px;
+    color: #0067b8;
+    text-decoration: none;
+    font-family:'cereal-two' ;
+}
+.learn-more i{
+    margin-left: 6px;
+}
+.developer-story-img img{
+    width: 100%;
+}
+.developer-story-main{
+    margin-bottom: 21px;
+}
+.story-texts-links-main{
+    padding: 0px 12px;
+    font-size: 16px;
+    font-family: 'cereal-two';
+    background: #000000;
+    color: #ffffff;
+    margin-block-start: -5px;
+}
+.story-texts-links{
+    padding: 48px 0px;
+}
+.story-texts-links h2{
+    margin: 0px 0px 8px;
+    font-size: 19px;
+    font-family: 'cereal-two';
+    line-height: 1.2;
+}
+.watch-story{
+    margin: 25px 24px 16px 0px;
+    
+
+}
+.watch-story a{
+    color: #ffffff;
+    background-color: #0078d4;
+    padding: 10px 12px 10px 35px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    border-radius: 2px;
+}
+.watch-story a i{
+    font-size: 9px;   
+    position: absolute;
+    top: 13px;
+    left:13px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    padding: 2px 2px;
+    
+}
+.check-story{
+    padding: 16px 27px 8px 0px;
+    margin-top: 12px;
+    
+}
+
+.check-story a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.check-story a i{
+    margin-left: 9px;
+}
+.azure-ads-main{
+    margin-top: 25px;
+}
+.three-ads-img{
+    padding: 24px 24px 0px;
+}
+.three-ads-img img{
+   width:48px;
+   height: 48px;
+}
+.azure-ads{
+    padding: 0px 12px;
+}
+.three-ads{
+    margin: 0px 0px 48px;
+   border: none;
+   border-radius: 9px;
+   color: #ffffff;
+
+   
+}
+.three-ads-one{
+    background-color: #243a5e;
+}
+.three-ads-texts{
+    padding: 24px 24px 34px;
+}
+
+.three-ads-texts h2 a {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'cereal-two';
+
+}
+.three-ads-texts p{
+    font-size: 16px;
+    font-family: 'cereal';
+    line-height: 1.5;
+}
+.ads-footer{
+    padding: 12px;
+}
+.three-ads-two{
+    background-color: #000000;
+}
+.three-ads-three{
+    background-color:#0062ad ;
+}
+
 
 
 @media screen and (min-width:426px) {
@@ -634,11 +837,6 @@ a.overview-btn:hover {
         justify-content: center;
     }
 }
-
-
-
-
-
 /* Tablet styles */
 @media screen and (min-width:768px) {
 
@@ -746,6 +944,17 @@ a.overview-btn:hover {
         padding: 20px 8px;
         font-size: 13px;
     }
+    .story-texts-links{
+        /* display: flex; */
+        position: relative;
+    }
+    .check-story{
+        position: absolute;
+        top:90px;
+        left:233px
+    }
+    
+
 }
 
 @media screen and (min-width:860px) {
@@ -986,11 +1195,55 @@ a.overview-btn:hover {
     .images-list .nba img {
         height: 36%;
     }
+    .migration-img-text{
+        display: flex;
+        align-items: center;
+        margin-block-start: 134px;
+    }
+    .migration-text-link{
+        padding: 48px;
+        margin-inline-start: -79px;
+    }
+    .migration-image img {
+        width: 87%;
+    }
+    .discover-cards-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:24px;
+        row-gap: 0px;
+    }
+    .discover-head h2{
+        text-align: center;
+    }
+    .story-texts-links-main{
+        margin-inline: 12px;
+       
+    }
+    .developer-story{
+        position: relative;
+    }
+    .story-texts-links-main{
 
+        position: absolute;
+        top:376px
+    }
+    .story-texts-links{
+        padding: 48px;
+    }
+    .check-story{
+        left: 276px;
+    }
+    .ad-azure{
+        display: flex;
+       gap:24px;
+       margin-block-start: 23%;
+    }
+    .three-ads{
+        width: 32%;
+    }
 
 }
-
-
 @media screen and (min-width:1080px) {
     .tablet-wrapper {
         display: none;
@@ -1415,6 +1668,49 @@ a.overview-btn:hover {
     .nhs-text-main h3{
         font-size: 19px;
     }
+    .migration-img-text{
+        margin-block-start: 0;
+        padding-inline: 49px;
+        margin-top: -6px;
+    }
+    .migration-text-link h2{
+        font-size: 29px;
+    }
+    .migration-text-link h2{
+        width: 83%;
+    }
+    .discover-head h2{
+        font-size: 21px;
+    }
+    .discover-head-cards{
+        padding: 0px 50px;
+    }
+    .discover-cards{
+        padding: 0px 50px;
+    }
+    .story-texts-links-main{
+        top:54px;
+        left: 14px;
+        right: 440px;
+        margin-left: 43px;
+    }
+    .check-story{
+        position: static;
+    }
+    .story-texts-links h2 {
+        font-size: 21px;
+    }
+    .story-texts-links{
+        padding-left: 37px;
+    }
+
+.watch-story a{
+    padding-right: 15px;
+}
+.ad-azure{
+    margin-block-start: 0;
+}
+
 
 }
 
@@ -1429,6 +1725,24 @@ a.overview-btn:hover {
     }
 
 }
+@media screen and (min-width:1153px){
+    .check-story{
+        position: absolute;
+        top:120px;
+    }
+    .story-texts-links-main{
+        right: 467px;
+    }
+   
+}
+@media screen and (min-width:1389px){
+    .check-story{
+        
+        top:97px;
+    }
+}
+
+
 
 @media screen and (min-width:1400px) {
     .intro-text h1 {
@@ -1492,7 +1806,35 @@ a.overview-btn:hover {
         top:50%;
         right:41%;
     }
+    .migration-text-link h2{
+        font-size: 37px;
+        margin: 0px 0px 25px;
+    }
+    .discover-head h2{
+        font-size: 24px;
+    }
+    .discover-head-cards{
+        padding: 0px 5%;
+    }
+    .discover-cards{
+        padding: 0px 5%;
+    }
+    .story-texts-links h2{
+        font-size: 24px;
+    }
+    .check-story{
+        position: absolute;
+        top:132px;
+    }
+    .story-texts-links-main {
+        right: 484px;
+    }
 
+}@media screen and (min-width:1600px){
+    .check-story{
+        position: absolute;
+        top:105px;
+    }
 }
 
 @media screen and (min-width:1629px) {
@@ -1545,19 +1887,28 @@ a.overview-btn:hover {
     .ideas-text-content h2 {
         font-size: 28px
     }
-    .nhs-text-main{
+     .nhs-text-main{
 
-        top:78%;
-        right:40%;
-        margin-left: 20%;
+        top:70%;
+        right:34%;
+        margin-left: 7%;
         padding: 30px;
     }
-    .nhs-text-main h3{
+    /* .nhs-text-main h3{
         font-size: 14px;
-    }
+    }  */
     .feature-list a span {
         font-size: 12px;
         margin-left: 30px;
+    }
+    .discover-head-cards{
+        padding: 0px 7%;
+    }
+    .discover-cards{
+        padding: 0px 6%;
+    }
+    .discover-head h2{
+        font-size: 21px;
     }
 
 }
