@@ -192,3 +192,7 @@ const jon={
     job:'teacher',
     friends:['micheal','peter']
 }
+getBtn=document.getElementById('btn')
+getBtn.addEventlistner('click',()=>{
+console.log('my name is jon')
+})
