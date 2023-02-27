@@ -217,34 +217,64 @@
 // console.log(jon.calcAge())
 
 
-const mark={
-    fullName:'mark miller',
-    mass:78,
-    height:1.69,
-    calcBMI:function(){
-        this.BmiValue=this.mass/this.height**2
-        return this.BmiValue
-    }
+
+// const mark={
+//     fullName:'mark miller',
+//     mass:78,
+//     height:1.69,
+//     calcBMI:function(){
+//         this.BmiValue=this.mass/this.height**2
+//         return this.BmiValue
+//     }
+
+// }
+// const john={
+//     fullName:'john smith',
+//     mass:92,
+//     height:1.95,
+//     calcBMI:function(){
+//         this.BmiValue=this.mass/this.height**2
+//         return this.BmiValue
+//     }
+
+    
+// }
+// mark.calcBMI()
+// john.calcBMI()
+// console.log(mark.BmiValue,john.BmiValue)
+
+// if(mark.BmiValue>john.BmiValue){
+//     console.log(`${mark.fullName}'s bmi ${mark.BmiValue} is higher than ${john.fullName}'s ${john.mark}`)
+// }
+// else {
+//     console.log(`${john.fullName}'s bmi ${john.BmiValue} is higher than ${mark.fullName}'s ${mark.mark}`)
+// }
+
+const jonasArray=['jonas','smith','teacher',67,['hey','world'],32]
+for (let i=0;i<jonasArray.length;i++){
+    console.log(jonasArray[i])
+}
+
+const years=[2001,2002,2003,1999,2009]
+const age=[]
+for (let i=0;i<years.length;i++){
+    age.push(2050-years[i])
 
 }
-const john={
-    fullName:'john smith',
-    mass:92,
-    height:1.95,
-    calcBMI:function(){
-        this.BmiValue=this.mass/this.height**2
-        return this.BmiValue
+console.log(age)
+for(let i=0;i<jonasArray.length;i++){
+    if( typeof jonasArray[i]!== 'string'){
+        continue
     }
+    console.log(jonasArray[i],typeof[i])
 
     
 }
-mark.calcBMI()
-john.calcBMI()
-console.log(mark.BmiValue,john.BmiValue)
-
-if(mark.BmiValue>john.BmiValue){
-    console.log(`${mark.fullName}'s bmi ${mark.BmiValue} is higher than ${john.fullName}'s ${john.mark}`)
+//break
+for(let i=0;i<jonasArray.length;i++){
+    if( typeof jonasArray[i]=== 'number'){
+        break
+    }
+    console.log(jonasArray[i],typeof[i])   
 }
-else {
-    console.log(`${john.fullName}'s bmi ${john.BmiValue} is higher than ${mark.fullName}'s ${mark.mark}`)
-}
+//looping backward
