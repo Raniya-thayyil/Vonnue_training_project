@@ -162,37 +162,89 @@
 // }
 // checkWinner(scoreDolphins,scoreKoalas)
 
-const friend=['micheal','bob','marley']
-console.log(friend.includes('mike'))
+// const friend=['micheal','bob','marley']
+// console.log(friend.includes('mike'))
 
 
 
-function calcTip(bills){
- return bills>=50 && bills <= 300 ? bills * 0.15:bills * 0.2    
+// function calcTip(bills){
+//  return bills>=50 && bills <= 300 ? bills * 0.15:bills * 0.2    
+
+// }
+
+// const bills=[125,555,44]
+// const tips=[calcTip(bills[0]),calcTip(bills[0]),calcTip(bills[1])]
+// const total=[bills[0]+tips[1],bills[1]+tips[1],bills[2]+tips[2]]
+// console.log(bills,tips,total)
+// console.log("hello")
+
+// const jonArray=[
+//     'jonas',
+//     'manu',
+//     23,
+//     ['micheal','peter']
+// ];
+
+// const jon={
+//     firstName:'jon',
+//     lastNmae:'peter',
+//     age:9,
+//     job:'teacher',
+//     friends:['micheal','peter']
+// }
+// const getBtn=document.getElementById('btn')
+// getBtn.addEventListener('click',()=>{
+// console.log('my name is jon')
+// })
+// console.log(jon.firstName)
+// const interestJob=prompt('enter the job')
+// console.log(jon[interestJob])
+
+// console.log(`${jon.firstName} has ${jon.friends.length},and his best friend is called  ${jon.friends[0]}`)
+
+// const jon={
+//     firstName:'jon',
+//     lastNmae:'peter',
+//     age:9,
+//     birthYr:1980,
+//     job:'teacher',
+//     friends:['micheal','peter'],
+//     hasDriversLicence:true,
+//     calcAge:function(){
+//         return 2037-this.birthYr;
+//     }
+// };
+// console.log(jon.calcAge())
+
+
+const mark={
+    fullName:'mark miller',
+    mass:78,
+    height:1.69,
+    calcBMI:function(){
+        this.BmiValue=this.mass/this.height**2
+        return this.BmiValue
+    }
 
 }
+const john={
+    fullName:'john smith',
+    mass:92,
+    height:1.95,
+    calcBMI:function(){
+        this.BmiValue=this.mass/this.height**2
+        return this.BmiValue
+    }
 
-const bills=[125,555,44]
-const tips=[calcTip(bills[0]),calcTip(bills[0]),calcTip(bills[1])]
-const total=[bills[0]+tips[1],bills[1]+tips[1],bills[2]+tips[2]]
-console.log(bills,tips,total)
-console.log("hello")
-
-const jonArray=[
-    'jonas',
-    'manu',
-    23,
-    ['micheal','peter']
-];
-
-const jon={
-    firstName:'jon',
-    lastNmae:'peter',
-    age:9,
-    job:'teacher',
-    friends:['micheal','peter']
+    
 }
-getBtn=document.getElementById('btn')
-getBtn.addEventlistner('click',()=>{
-console.log('my name is jon')
-})
+mark.calcBMI()
+john.calcBMI()
+console.log(mark.BmiValue,john.BmiValue)
+
+if(mark.BmiValue>john.BmiValue){
+    console.log(`${mark.fullName}'s bmi ${mark.BmiValue} is higher than ${john.fullName}'s ${john.mark}`)
+}
+else {
+    console.log(`${john.fullName}'s bmi ${john.BmiValue} is higher than ${mark.fullName}'s ${mark.mark}`)
+}
