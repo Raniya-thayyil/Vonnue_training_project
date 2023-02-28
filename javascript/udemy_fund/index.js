@@ -250,31 +250,94 @@
 //     console.log(`${john.fullName}'s bmi ${john.BmiValue} is higher than ${mark.fullName}'s ${mark.mark}`)
 // }
 
-const jonasArray=['jonas','smith','teacher',67,['hey','world'],32]
-for (let i=0;i<jonasArray.length;i++){
-    console.log(jonasArray[i])
-}
+// const jonasArray=['jonas','smith','teacher',67,['hey','world'],32]
+// for (let i=0;i<jonasArray.length;i++){
+//     console.log(jonasArray[i])
+// }
 
-const years=[2001,2002,2003,1999,2009]
-const age=[]
-for (let i=0;i<years.length;i++){
-    age.push(2050-years[i])
+// const years=[2001,2002,2003,1999,2009]
+// const age=[]
+// for (let i=0;i<years.length;i++){
+//     age.push(2050-years[i])
 
-}
-console.log(age)
-for(let i=0;i<jonasArray.length;i++){
-    if( typeof jonasArray[i]!== 'string'){
-        continue
-    }
-    console.log(jonasArray[i],typeof[i])
+// }
+// console.log(age)
+// for(let i=0;i<jonasArray.length;i++){
+//     if( typeof jonasArray[i]!== 'string'){
+//         continue
+//     }
+//     console.log(jonasArray[i],typeof[i])
 
     
+// }
+// //break
+// for(let i=0;i<jonasArray.length;i++){
+//     if( typeof jonasArray[i]=== 'number'){
+//         break
+//     }
+//     console.log(jonasArray[i],typeof[i])   
+// }
+// //looping backward
+// for(let i=jonasArray.length-1;1>=0;i--){
+//     console.log(i,jonasArray[i])
+// }
+
+let classObj = {
+    "name" : "class A" ,
+    "teacherName" : "Mary" ,
+    "students" : [ 
+        {
+            "name" : "Ravi" ,
+            "id" : "101" ,
+            "marks" : [
+                {"subject" : "English" , "mark" : 25}, 
+                {"subject" : "Maths", "mark" : 48}, 
+                {"subject" : "Physics", "mark" : 40}, 
+                {"subject" : "Chemistry", "mark" : 30},
+                {"subject" : "Computer", "mark" : 20}
+            ]
+        },
+        {
+            "name" : "Aju" ,
+            "id" :  "102",
+            "marks" : [
+                {"subject" : "English" , "mark" : 35}, 
+                {"subject" : "Maths", "mark" : 38}, 
+                {"subject" : "Physics", "mark" : 33}, 
+                {"subject" : "Chemistry", "mark" : 34},
+                {"subject" : "Computer", "mark" : 30}
+            ]
+        },
+        {
+            "name" : "Mini SS" ,
+            "id" : "103" ,
+            "marks" : [
+                {"subject" : "English" , "mark" : 12}, 
+                {"subject" : "Maths", "mark" : 49}, 
+                {"subject" : "Physics", "mark" : 18}, 
+                {"subject" : "Chemistry", "mark" : 30},
+                {"subject" : "Computer", "mark" : 40}
+            ]
+        },
+        {
+            "name" : "Binu" ,
+            "id" : "104" ,
+            "marks" : [
+                {"subject" : "English" , "mark" : 49}, 
+                {"subject" : "Maths", "mark" : 49}, 
+                {"subject" : "Physics", "mark" : 47}, 
+                {"subject" : "Chemistry", "mark" : 46},
+                {"subject" : "Computer", "mark" : 50}
+            ]
+        }
+    ]
 }
-//break
-for(let i=0;i<jonasArray.length;i++){
-    if( typeof jonasArray[i]=== 'number'){
-        break
-    }
-    console.log(jonasArray[i],typeof[i])   
-}
-//looping backward
+const marks= classObj.students[0].marks
+
+
+
+// function getMarks(){
+//     for(let i=0;i<)
+
+// }
+
