@@ -332,12 +332,185 @@ let classObj = {
         }
     ]
 }
-const marks= classObj.students[0].marks
+// const marks= classObj.students[0].marks
+
+// const john={
+//     fullName:'john smith',
+//     mass:92,
+//     height:1.95,
+//     student:[12,23,45]
+   
+// }
+// john.weight=67
+// john.student.push(67)
+// console.log(john)
+
+// function addData(a,b){
+//     const marks={}
+//     marks.subject=a
+//     marks.mark=b
+//     console.log(marks)
+// }
+// console.log(addData('english',54))
+
+
+const std={
+    "name" : "Rai" ,
+    "id" : "101" ,
+    "marks" : [
+        {"subject" : "English" , "mark" : 25}, 
+        {"subject" : "Maths", "mark" : 48}, 
+        {"subject" : "Physics", "mark" : 40}, 
+        {"subject" : "Chemistry", "mark" : 30},
+        {"subject" : "Computer", "mark" : 20}
+    ]
+}
+
+// classObj.students.push(std)
+// console.log(classObj)
 
 
 
-// function getMarks(){
-//     for(let i=0;i<)
+// function addObj(a,b,c){
+//     std.name=a
+//     std.id=b
+//     std.marks=c
+//     console.log(std)
+// }
+// const marks=[]
+// addObj('roy','id',marks)
+
+
+// //adding small objetc to array
+// const smallObj={}
+// function crObj(a,b){
+    
+//     smallObj.subject=a
+//     smallObj.mark=b
+//     console.log(smallObj)
+//     return smallObj
+// }
+// crObj('english',90)
+// std.marks.push(smallObj)
+// console.log(std)
+
+
+//1.adding student subject and mark in object to the marks array
+// const fifthStudent={}
+// const marks=[]
+// const smallObj={}
+// function addSubMarkObjToArray(sub,markObtained){
+//     smallObj.subject=sub
+//     smallObj.mark=markObtained
+//     // console.log(smallObj)
+//     return smallObj
 
 // }
+// addSubMarkObjToArray('english',90)
+// addSubMarkObjToArray('Maths',60)
+// // addSubMarkObjToArray('Physics',54)
+
+
+// marks.push(smallObj)
+
+
+
+
+//  //1.function to add object in students array
+
+//  function addObjectInArray(stdName,stdId,markArr){
+//     fifthStudent.name=stdName
+//     fifthStudent.id=stdId
+//     fifthStudent.marks=markArr
+//     // console.log(fifthStudent)
+//     return fifthStudent
+
+// }   
+// addObjectInArray('Raniya',105,marks)
+// classObj.students.push(fifthStudent)
+// console.log(classObj)
+
+//sixthStudent
+
+
+
+// const marks=[]
+// function createMarkObj(subject1,mark1){
+//     const newMarkObj={}
+//     newMarkObj.subject=subject1
+//     newMarkObj.mark=mark1
+//     return newMarkObj
+// }
+
+// let markObj = createMarkObj('English',89)
+// let markObj1 = createMarkObj('Maths',79)
+// let markObj3 = createMarkObj('CS', 100)
+
+// // marks.push(markObj,markObj1)
+
+
+
+
+// function createStudentDetail(id, name1,emailid,age1,phn,mark2){
+//     const studentDetail={}
+//     studentDetail.id = id
+//     studentDetail.name = name1
+//     studentDetail.email = emailid
+//     studentDetail.age = age1
+//     studentDetail.phoneNumber = phn
+//     studentDetail.marks = mark2
+//     return studentDetail
+// }
+
+// function createMarks(...markObj){
+//     let newMarks = []
+//     newMarks.push(...markObj)
+//     return newMarks
+// }
+
+// let std1marks = createMarks(markObj, markObj1, markObj3)
+// let std1 = createStudentDetail(105, 'marry','mary@gmail.com',24,'7689809809',std1marks)
+// classObj.students.push(std1)
+
+// //let markChange = prompt('enter marks')
+// console.log(classObj)
+// // console.log(markChange)
+
+
+
+//destructing
+
+const obj1={
+    name:'raniya',
+    place:'london',
+    pin:12,
+    status:'rwr'
+}
+
+// const name=obj1.name
+// const place=obj1.place
+// const pin=obj1.pin
+
+const{
+    name,status=false,...others
+}=obj1
+
+console.log(name,status,others)
+
+const arr=[1,2,3,4,5,6,7]
+const [a,b,c,...other] = arr
+console.log(a,b,c,other)
+
+function test(...total){
+    // const arr=['raniya',23,'kerala']
+    // const [a,b,...others]=arr
+    // console.log(a,b,others)
+    
+
+    console.log(total)
+
+}
+test(11,35,87,34)
+
+
 
