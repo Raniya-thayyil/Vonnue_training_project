@@ -131,34 +131,28 @@ const totalMarks = () => {
     let students = classObj.students
     let arr = []
     let topMark
-
+    let topStudent
     for (let i = 0; i < students.length; i++) {
         let totalMarks = 0;
-
         for (let j = 0; j < students[i].marks.length; j++) {
             totalMarks += students[i].marks[j].mark
             // let topper =  students[i]
-            // let topperMark = totalMark         
-
-
+            // let topperMark = totalMark
         }
-
         arr.push(totalMarks)
-
-         topMark = arr[0]
        
+         topMark = arr[0]
+         topStudent = students[i]       
         for (i = 0; i < arr.length; i++) {
             if (arr[i] > topMark) {
                 topMark = arr[i]
-                
+                topStudent = students[i]         
 
             }
-        }
-
+        }     
     }
-    console.log(topMark)
-    
-
+    //console.log(topMark)
+    //console.log(topStudent)
 }
 totalMarks()
 

@@ -29,7 +29,7 @@ let classObj = {
             "name": "Mini SS",
             "id": "103",
             "marks": [
-                { "subject": "English", "mark": 12 },
+                { "subject": "English", "mark": 1120 },
                 { "subject": "Maths", "mark": 49 },
                 { "subject": "Physics", "mark": 18 },
                 { "subject": "Chemistry", "mark": 30 },
@@ -142,7 +142,7 @@ const studentDetail = (id, students) => {
     return getDetails
 
 }
-console.log(studentDetail("103", classObj.students)); 
+//console.log(studentDetail("103", classObj.students)); 
 
 //student details with a specific id
 
@@ -150,7 +150,7 @@ const findStudentById = (id) => {
     let students = classObj.students
     for (let i = 0; i < students.length; i++) {        
         if (id === students[i].id) {
-            console.log(students[i])
+            //console.log(students[i])
 
         }
     }
@@ -173,7 +173,8 @@ const totalMarksById = (id) => {
 
 }
 let totalMarks = totalMarksById('102')
-console.log(totalMarks)
+let totalMark1 = totalMarksById('103')
+//console.log(totalMarks,totalMark1)
 
 //edit mark of a student for a subject
 
@@ -184,13 +185,13 @@ const editMarkOfStudent = (id, subject, newMark) => {
             students[i].marks.forEach(item => {
                 if (item.subject === subject) {
                     item.mark = newMark
-                    console.log(classObj)
+                    //console.log(classObj)
                 }
             })
         }
     }
 }
-editMarkOfStudent('102', 'English',68)
+ //editMarkOfStudent('102', 'English',68)
 
 //remove a student from a class
 
@@ -205,7 +206,7 @@ const deleteStudent = (id) => {
     }
 
 }
-deleteStudent('103')
+// deleteStudent('103')
 
 //delete a subject entry from every students
 
@@ -221,14 +222,63 @@ const deleteSujectEntry = (subjectTodelete) => {
         }
     }
 }
-deleteSujectEntry('Physics')
+// deleteSujectEntry('Physics')
 
+//top student 
 
+const totalMarksTopStudent = () => {
+    let students = classObj.students    
+    let topMark = 0
+    let topStudent
+    for (let i = 0; i < students.length; i++) {
+        let totalMarks = 0;
+        for (let j = 0; j < students[i].marks.length; j++) {
+            totalMarks += students[i].marks[j].mark
+        }
 
+        if (topMark < totalMarks) {
+            topMark = totalMarks
+            topStudent = students[i]
+        }
+           
+    }
+    console.log(topMark)
+    console.log(topStudent)
+}
+totalMarksTopStudent()
 
+//average mark of given subject
 
+const averageMarkOfSubject = (subject) => {
+        let students = classObj.students
+        let numberOfMarks = 4
+            let sum = 0
+            let average 
+        for (let i = 0;i < students.length;i++) {            
+            for (let j = 0;j < students[i].marks.length;j++) {
+                if (students[i].marks[j].subject === subject)  {
+                    sum += students[i].marks[j].mark                    
+                }               
+            }
+        } 
+        console.log(sum)
+        average = sum / numberOfMarks
+        console.log(average)
+}
+averageMarkOfSubject('Maths')
 
-
+//sort list of students according to name
+const sortStudents = () => {
+    let students  = classObj.students
+    let studentsArray = []
+    for (let i = 0;i < students.length;i++) {
+        studentsArray.push(students[i].name)
+    }
+   
+    studentsArray.sort() 
+    console.log(studentsArray)
+}
+sortStudents()
 
 
 
