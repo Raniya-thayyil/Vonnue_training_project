@@ -92,6 +92,7 @@ let classObj = {
 //     student.phone = phone
 //     student.marks = markArray
 //     return student
+
 // }
 // let student1 = student('jordy', 105, 'jo@gmail.com', 21, '8909876758', getMarksArrayStd1)
 // //let student2=student('alan','alan@gmail.com',23,'7898767856',getMarksArrayStd2)
@@ -129,9 +130,7 @@ createStudent("100", "Raniya")
 
 
 const studentDetail = (id, students) => {
-
     const studentDetailsOfId = students.find((item) => {
-
         return item.id === id
     })
     let getDetails = studentDetailsOfId.marks
@@ -139,25 +138,26 @@ const studentDetail = (id, students) => {
         subject: 'CS',
         Mark: 80
     }
-
     getDetails.push(subjectMark)
     return getDetails
 
 }
-//console.log(studentDetail("103", classObj.students)); 
+console.log(studentDetail("103", classObj.students)); 
+
+//student details with a specific id
 
 const findStudentById = (id) => {
     let students = classObj.students
-    for (let i = 0; i < students.length; i++) {
-        //console.log(students[i])
+    for (let i = 0; i < students.length; i++) {        
         if (id === students[i].id) {
             console.log(students[i])
+
         }
     }
-
-
 }
 findStudentById('102')
+
+//total marks of a student with particular id
 
 const totalMarksById = (id) => {
     let students = classObj.students
@@ -166,18 +166,62 @@ const totalMarksById = (id) => {
             let totalMarks = 0;
             for (let j = 0; j < students[i].marks.length; j++) {
                 totalMarks += students[i].marks[j].mark
-
             }
             return totalMarks
         }
     }
 
 }
-
 let totalMarks = totalMarksById('102')
-
 console.log(totalMarks)
 
+//edit mark of a student for a subject
+
+const editMarkOfStudent = (id, subject, newMark) => {
+    let students = classObj.students
+    for (let i = 0; i < students.length; i++) {
+        if (id === students[i].id) {
+            students[i].marks.forEach(item => {
+                if (item.subject === subject) {
+                    item.mark = newMark
+                    console.log(classObj)
+                }
+            })
+        }
+    }
+}
+editMarkOfStudent('102', 'English',68)
+
+//remove a student from a class
+
+const deleteStudent = (id) => {
+    let students = classObj.students
+    for (let i = 0; i < students.length; i++) {
+        if (id === students[i].id) {
+            //delete students[i]   
+            students.splice(students.indexOf(students[i]), 1)
+            //console.log(classObj)
+        }
+    }
+
+}
+deleteStudent('103')
+
+//delete a subject entry from every students
+
+const deleteSujectEntry = (subjectTodelete) => {
+    let students = classObj.students
+    for (let i = 0;i < students.length;i++) {
+        for (let j = 0;j < students[i].marks.length;j++) {
+            if (students[i].marks[j].subject === subjectTodelete ) {
+                //delete students[i].marks[j]
+                students[i].marks.splice(students[i].marks.indexOf(students[i].marks[j]),1)
+                //console.log(classObj)                
+            }
+        }
+    }
+}
+deleteSujectEntry('Physics')
 
 
 

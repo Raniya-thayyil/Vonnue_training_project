@@ -480,37 +480,114 @@ const std={
 
 //destructing
 
-const obj1={
-    name:'raniya',
-    place:'london',
-    pin:12,
-    status:'rwr'
-}
+// const obj1={
+//     name:'raniya',
+//     place:'london',
+//     pin:12,
+//     friends:{
+//         name:'jon',
+//         location:'us'
+//     }
+// }
 
 // const name=obj1.name
 // const place=obj1.place
 // const pin=obj1.pin
 
-const{
-    name,status=false,...others
-}=obj1
+// const{
+//     name,status=false,...others
+// }=obj1
 
-console.log(name,status,others)
+// console.log(name,status,others)
 
-const arr=[1,2,3,4,5,6,7]
-const [a,b,c,...other] = arr
-console.log(a,b,c,other)
+// const arr=[1,2,3,4,5,6,7]
+// const [a,b,c,...other] = arr
+// console.log(a,b,c,other)
 
-function test(...total){
-    // const arr=['raniya',23,'kerala']
-    // const [a,b,...others]=arr
-    // console.log(a,b,others)
+// function test(...total){
+//     // const arr=['raniya',23,'kerala']
+//     // const [a,b,...others]=arr
+//     // console.log(a,b,others)
     
 
-    console.log(total)
+//     console.log(total)
 
+// }
+// test(11,35,87,34)
+
+
+const obj1 = {
+    name:'raniya',
+    place:'london',
+    pin:12,
+    friends:{
+        name:'jon',
+        location:'us'
+    }
 }
-test(11,35,87,34)
+delete obj1.friends
+console.log(obj1)
 
+for (let key in obj1) {
+    console.log(key)
+}
+ //forEach
+
+ const arr = [
+    {
+        name:'raniya',
+        mark:56,
+        place:'london'
+    },
+    {
+        name:'ram',
+        mark:50,
+        place:'us'
+    },
+    {
+        name:'mary',
+        mark:36,
+        place:'uk'
+    }
+ ]
+ let sum = 0
+ arr.forEach((item) => {
+    sum += item.mark
+ })
+ console.log(sum)
+
+ const found = arr.find((item) => {
+    return item.mark = 56
+ })
+ console.log(found)
+
+let nums = [1,2,3,4]
+// let product = 1
+// //(item,index,array)
+// nums.forEach((item,i,nums) => {
+//      product *= item
+     
+   
+// })
+//console.log(product)
+let result = nums.filter( n => n%2 === 0)
+.map( n => n*2)
+.reduce((a,b) => a+b);
+console.log(result) 
+const arr1 = [12,3,13,1,45]
+console.log(arr1.map( n => n * 2)) 
+
+
+const tripleValues = (x) => {
+    return x * 3
+}
+const binaryValue = (x) => {
+     return x.toString(2)
+}
+
+const output = arr1.map(binaryValue)
+console.log(output)
+
+console.log(arr1.filter( x => x % 2 === 0))
 
 
