@@ -128,7 +128,22 @@ let classObj = {
 
 
 const totalMarks = () => {
-    let students = classObj.students
+    let students = clas
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    sObj.students
     let arr = []
     let topMark
     let topStudent
